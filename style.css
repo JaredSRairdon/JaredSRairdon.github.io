@@ -54,7 +54,7 @@ main {
     padding: 7.5px;
     display: flex;
     position: relative;
-    border: solid 0.2rem greenyellow;
+    /* border: solid 0.2rem greenyellow; */
 }
 
 @media screen and (min-width: 900px) {
@@ -182,13 +182,29 @@ main {
     padding-top: 0.3rem;
 }
 
-/* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
-@media screen and (max-width: 1024px) {
+.top-left-corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-left: 3px solid greenyellow;
+    border-top: 3px solid greenyellow;
 
 }
-  
-/* ============ MEDIA QUERIES (SMALL DEVICES/PHONE) =========== */
-@media screen and (max-width: 480px) {
+
+.bottom-right-corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 125px;
+    height: 125px;
+    border-right: 3px solid greenyellow;
+    border-bottom: 3px solid greenyellow;
+}
+
+/* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
+@media screen and (max-width: 1200px) {
     .project-wrapper {
         display: flex;
         flex-direction: column;
@@ -198,4 +214,9 @@ main {
     .project {
         padding: 1rem 0 1rem 0;
     }
+}
+  
+/* ============ MEDIA QUERIES (SMALL DEVICES/PHONE) =========== */
+@media screen and (max-width: 480px) {
+
 }
