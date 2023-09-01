@@ -203,6 +203,19 @@ main {
     border-bottom: 3px solid greenyellow;
 }
 
+#github-link i {
+    color: rgb(60, 60, 60);
+    font-size: 2rem;
+}
+
+#github-link {
+    position: absolute;
+    top: 20px; /* This needs to match the padding of main-container-inner! */
+    right: 20px; /* This needs to match the padding of main-container-inner! */
+    z-index: 2;
+    text-decoration: none;
+}
+
 /* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
 @media screen and (max-width: 1200px) {
     .project-wrapper {
