@@ -10,47 +10,54 @@
 
     <body>
         <div class="main">
+            <header>
+                <nav class="navbar">
+                    <div class="navbar-container">
+                        <div class="navbar-links">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Projects</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
             <div class="main-container">
                 <div class="main-container-inner" id="main-container-inner">
                     <div class="top-left-corner"></div>
                     <div class="inner-container">
-                        <header>
-
-                        </header>
                         <main class="main-content">
                             <div class="intro-message">
                                 <h1>Jared Rairdon</h1>
                                 <p>Hi there! My name is Jared Rairdon and I am a full-stack developer based in Dallas, TX.</p>
+                                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
                                 <a href="./assets/JaredRairdonResume.pdf" download="JaredRairdonResume">
                                     <button class="cv-btn button">Download CV</button>
                                 </a>
                             </div>
                             <div class="project-list">
-                                <h2>Projects</h2>
+                                <h2>Highlighted Projects</h2>
                                 <div class="project-wrapper">
-                                    <div class="project" role="button">
-                                        <h3>Emoji-Tac-Toe!</h3>
+                                    <div class="project" id="crypto-cruiser-project">
+                                        <h3>Crypto Cruiser</h3>
                                         <p class="project-description">
-                                            This is a sample project description.
+                                            Set sail and cruise<br>the crypto markets for free!
                                         </p>
                                         <div class="project-button-wrapper">
-                                            <a href="https://github.com/JaredSRairdon/emoji-tac-toe" target="_blank">
+                                            <a href="https://github.com/JaredSRairdon/crypto-cruiser" target="_blank">
                                                 <button class="github-btn button">GitHub</button>
-                                            </a>
-                                            <a href="https://jaredsrairdon.github.io/emoji-tac-toe" target="_blank">
-                                                <button class="live-demo-btn button">Live Demo</button>
                                             </a>
                                         </div>
                                         <div class="icon-list">
+                                            <i class="devicon-react-original-wordmark"></i>
                                             <i class="devicon-javascript-plain"></i>
                                             <i class="devicon-html5-plain-wordmark"></i>
-                                            <i class="devicon-css3-plain-wordmark"></i>
+                                            <i class="devicon-css3-plain-wordmark"></i>                                            
                                         </div>
                                     </div>
-                                    <div class="project" role="button">
+                                    <div class="project" id="brick-click-project">
                                         <h3>Brick Click</h3>
                                         <p class="project-description">
-                                            This is a sample project description.
+                                            There's no time to waste!<br>Go click those bricks.
                                         </p>
                                         <div class="project-button-wrapper">
                                             <a href="https://github.com/JaredSRairdon/brick-click/tree/main" target="_blank">
@@ -67,6 +74,25 @@
                                             <i class="devicon-css3-plain-wordmark"></i>                                            
                                         </div>
                                     </div>
+                                    <div class="project" id="emoji-tac-toe-project">
+                                        <h3>Emoji-Tac-Toe!</h3>
+                                        <p class="project-description">
+                                            The ultimate<br>emoji showdown.
+                                        </p>
+                                        <div class="project-button-wrapper">
+                                            <a href="https://github.com/JaredSRairdon/emoji-tac-toe" target="_blank">
+                                                <button class="github-btn button">GitHub</button>
+                                            </a>
+                                            <a href="https://jaredsrairdon.github.io/emoji-tac-toe" target="_blank">
+                                                <button class="live-demo-btn button">Live Demo</button>
+                                            </a>
+                                        </div>
+                                        <div class="icon-list">
+                                            <i class="devicon-javascript-plain"></i>
+                                            <i class="devicon-html5-plain-wordmark"></i>
+                                            <i class="devicon-css3-plain-wordmark"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </main>
@@ -75,6 +101,9 @@
                     <a href="https://github.com/JaredSRairdon" target="_blank" id="github-link"><i class="devicon-github-original"></i></a>
                     <div class="bottom-right-corner"></div>
                 </div>
+            </div>
+            <div class="about-menu">
+                About Section
             </div>
         </div>
     </body>

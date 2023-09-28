@@ -37,7 +37,8 @@ main {
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
-    display: flex
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (min-width: 900px) {
@@ -48,6 +49,43 @@ main {
         overflow: hidden
     }
 }
+
+.main .navbar {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.main .navbar .navbar-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main .navbar .navbar-container .navbar-links {
+    justify-self: flex-end;
+}
+
+.main .navbar .navbar-container .navbar-links a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
+@media screen and (max-width: 1200px) {
+.main .navbar .navbar-container {
+    justify-content: center;
+}
+}
+
+/* ============ MEDIA QUERIES (SMALL DEVICES/PHONE) =========== */
+@media screen and (max-width: 480px) {
+
+}
+
 
 .main-container .main-container-inner {
     width: 100vw;
