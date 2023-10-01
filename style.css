@@ -16,24 +16,16 @@ body {
     font-family: 'Montserrat';
 }
 
-main {
-    display: block
-}
-
 .main {
     box-sizing: border-box;
-    display: block;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: flex;
+    flex-direction: column;
     overflow-y: auto
 }
 
 .main-container {
     max-width: 100vw;
-    height: 100%;
+    /* height: 100%; */
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -50,22 +42,16 @@ main {
     }
 }
 
-.main .navbar {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-}
-
-.main .navbar .navbar-container {
+.navbar-container .navbar {
     display: flex;
     justify-content: flex-end;
 }
 
-.main .navbar .navbar-container .navbar-links {
+.navbar-container .navbar .navbar-links {
     justify-self: flex-end;
 }
 
-.main .navbar .navbar-container .navbar-links a {
+.navbar-container .navbar .navbar-links a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -76,19 +62,19 @@ main {
 
 /* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
 @media screen and (max-width: 1200px) {
-.main .navbar .navbar-container {
-    justify-content: center;
-}
+
 }
 
 /* ============ MEDIA QUERIES (SMALL DEVICES/PHONE) =========== */
 @media screen and (max-width: 480px) {
-
+    .navbar-container .navbar {
+        justify-content: center;
+    }
 }
 
 
 .main-container .main-container-inner {
-    width: 100vw;
+    width: 94vw;
     max-width: 1280px;
     box-sizing: border-box;
     margin-top: 0;
@@ -228,7 +214,7 @@ main {
 }
 
 .button {
-    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem;
     border: none;
     font-family: 'montserrat';
     white-space: nowrap;
@@ -287,6 +273,15 @@ main {
     text-decoration: none;
 }
 
+.experience-section {
+    background-color: #313136;
+    padding: 10rem 0;
+}
+
+
+
+
+
 /* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
 @media screen and (max-width: 1200px) {
     .project-wrapper {
@@ -304,3 +299,4 @@ main {
 @media screen and (max-width: 480px) {
 
 }
+
