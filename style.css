@@ -35,8 +35,8 @@ body {
 
 @media screen and (min-width: 900px) {
     .main-container {
-        height:100vh;
-        max-height: 100vh;
+        /* height:100vh; */
+        /* max-height: 100vh; */
         align-items: center;
         overflow: hidden
     }
@@ -276,11 +276,52 @@ body {
 .experience-section {
     background-color: #313136;
     padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
 }
 
+.experience-section h1 {
+    text-align: center;
+    font-size: 3rem;
+}
 
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 
+.card {
+    padding: 3rem;
+    background-color: #1d1d20;
+    border-radius: 1rem;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-front > img {
+    width: 15rem;
+}
+
+.card-front > p {
+    text-align: center;
+    padding: 0rem 2rem;
+}
 
 /* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
 @media screen and (max-width: 1200px) {
@@ -292,6 +333,10 @@ body {
 
     .project {
         padding: 1rem 0 1rem 0;
+    }
+
+    .card-container {
+        flex-direction: column;
     }
 }
   
