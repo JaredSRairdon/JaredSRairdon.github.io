@@ -48,7 +48,17 @@ body {
     flex-direction: column;
 }
 
+.main-container h1 {
+    font-size: 2rem;
+    margin: -0.5rem 0rem;
+}
+
+.main-container p {
+    font-size: 1.2rem;
+}
+
 @media screen and (min-width: 900px) {
+
     .main-container {
         /* height:100vh; */
         /* max-height: 100vh; */
@@ -94,7 +104,7 @@ body {
     box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 7.5px;
+    padding: 1rem;
     display: flex;
     position: relative;
     /* border: solid 0.2rem greenyellow; */
@@ -140,7 +150,6 @@ body {
     height: calc(100% - 102px);
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     transform: translateZ(0);
     display: flex;
     gap: 2rem;
@@ -151,21 +160,24 @@ body {
     flex-direction: column;
 }
 
-.main-container .main-container-inner .inner-container .main-content .intro-message {
+.intro-message {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.6rem;
+    align-items: center;
+    text-align: center;
 }
 
-.main-container .main-container-inner .inner-container .main-content .intro-message .cv-btn {
+.intro-message .cv-btn {
     background-color: var(--accent-primary);
     max-width: 250px;
     align-self: center;
 }
 
-.main-container .main-container-inner .inner-container .main-content .intro-message a {
+.intro-message a {
     max-width: 138px;
 }
+
 
 .main-container .main-container-inner .inner-container .main-content .selection-window {
     background-color: black;
@@ -366,6 +378,12 @@ body {
 .card-back {
     transform: rotateY(180deg);
 }
+
+.about-me {
+    padding: 10rem 0;
+}
+
+
 
 /* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
 @media screen and (max-width: 1200px) {
