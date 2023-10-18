@@ -247,6 +247,8 @@ body {
     white-space: nowrap;
     -webkit-appearance: none;
     text-align: center;
+    color: var(--background-primary);
+    font-weight: 500;
 }
 
 .github-btn {
