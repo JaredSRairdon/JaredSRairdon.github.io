@@ -385,7 +385,10 @@ body {
     padding: 10rem 0;
 }
 
-
+#thank-you {
+    padding: 3rem;
+    text-align: center;
+}
 
 /* ============ MEDIA QUERIES (MEDIUM DEVICES/TABLET) =========== */
 @media screen and (max-width: 1200px) {
